@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: green;
+    height: 130px;
+}
+
+.head-title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    /* margin  : 1rem; */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* padding-bottom: 1px; */
+
+}
+
+.hero-title {
+    color: green;
+    margin-bottom: 1rem;
+}
+
+
+.about-css-container {
+    /* display: flex;
+    gap: 2rem;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+}
+
+.about-css {
+    width: 550px;
+    height: 200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 12px;
+    place-content: center;
+}
+
+.about-css:nth-child(2){
+    place-self: flex-end;
+}
+.main-content {
+    padding: 12px;
+    margin: 2rem;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 4rem;
+}
+
+.footer-content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    letter-spacing: 0.1rem;
+}
+
+.footer-link{
+    color: green;
+    text-decoration: none;
+
+    &.footer-link:hover{
+        text-decoration: none;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="head-title">Welcome to Your Website Task</h1>
+
+        <ul class="navigation">
+            <a href="">
+                <li>Home</li>
+            </a>
+            <a href="">
+                <li>About</li>
+            </a>
+            <a href="">
+                <li>Contact</li>
+            </a>
+
+        </ul>
+    </header>
+
+
+    <main class="main-content">
+        <div class="about-css-container">
+            <div class="about-css">
+                <h2 class="hero-title">About CSS</h2>
+                <p class="main-para">Cascading Style Sheets (CSS) allow you to style and layout you web pages, adding
+                    colors, spacing and more.</p>
+            </div>
+            <div class="about-css">
+                <h2 class="hero-title">Box Model</h2>
+                <p class="main-para">The CSS box model describes the rectangular boxes generated for
+                elements. It margins, borders, padding, and actual content.</p>
+            </div>
+            <div class="about-css">
+                <h2 class="hero-title">Responsive Design</h2>
+                <p class="main-para">Responsive Design ensures your webpage looks great on all devices, from desktops to mobile phones.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Created by Mohd Sanib I Follow us
+                <a class="footer-link" href="">Instagram | </a>
+                <a class="footer-link" href="">Twitter | </a>
+                <a class="footer-link" href="">LinkedIn </a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
